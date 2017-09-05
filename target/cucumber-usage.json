@@ -1,35 +1,35 @@
 [
   {
-    "source": "el libro tiene el ISBN (.*)",
+    "source": "el codigo de estado es (\\d+)",
     "steps": [
       {
-        "name": "el libro tiene el ISBN 9781451648546",
+        "name": "el codigo de estado es 200",
         "aggregatedDurations": {
-          "average": 0.650365532,
-          "median": 0.650365532
+          "average": 0.05096471,
+          "median": 0.05096471
         },
         "durations": [
           {
-            "duration": 0.650365532,
-            "location": "GetBookByISBN.feature:3"
+            "duration": 0.05096471,
+            "location": "GetBookByISBN.feature:5"
           }
         ]
       }
     ]
   },
   {
-    "source": "el codigo de estado es (\\d+)",
+    "source": "el libro tiene el id (.*)",
     "steps": [
       {
-        "name": "el codigo de estado es 200",
+        "name": "el libro tiene el id 8U2oAAAAQBAJ",
         "aggregatedDurations": {
-          "average": 0.051586156,
-          "median": 0.051586156
+          "average": 1.106339562,
+          "median": 1.106339562
         },
         "durations": [
           {
-            "duration": 0.051586156,
-            "location": "GetBookByISBN.feature:5"
+            "duration": 1.106339562,
+            "location": "GetBookByISBN.feature:3"
           }
         ]
       }
@@ -41,31 +41,13 @@
       {
         "name": "un usuario obtiene los datos del libro por el ISBN",
         "aggregatedDurations": {
-          "average": 1.39375453,
-          "median": 1.39375453
+          "average": 3.617261882,
+          "median": 3.617261882
         },
         "durations": [
           {
-            "duration": 1.39375453,
+            "duration": 3.617261882,
             "location": "GetBookByISBN.feature:4"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "la respuesta incluye los datos siguientes en cualquier orden",
-    "steps": [
-      {
-        "name": "la respuesta incluye los datos siguientes en cualquier orden",
-        "aggregatedDurations": {
-          "average": 0.037257452,
-          "median": 0.037257452
-        },
-        "durations": [
-          {
-            "duration": 0.037257452,
-            "location": "GetBookByISBN.feature:9"
           }
         ]
       }
@@ -77,12 +59,12 @@
       {
         "name": "la respuesta tiene los siguientes datos",
         "aggregatedDurations": {
-          "average": 0.283247931,
-          "median": 0.283247931
+          "average": 0.537970218,
+          "median": 0.537970218
         },
         "durations": [
           {
-            "duration": 0.283247931,
+            "duration": 0.537970218,
             "location": "GetBookByISBN.feature:6"
           }
         ]

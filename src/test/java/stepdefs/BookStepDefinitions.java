@@ -1,13 +1,5 @@
 package stepdefs;
 
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.containsInAnyOrder;
-import static org.hamcrest.Matchers.equalTo;
-
-import java.util.Map;
-
-import org.apache.commons.lang3.StringUtils;
-
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -15,6 +7,13 @@ import cucumber.api.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.Map;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.containsInAnyOrder;
+import static org.hamcrest.Matchers.equalTo;
 
 public class BookStepDefinitions {
 
@@ -24,10 +23,16 @@ public class BookStepDefinitions {
 
 	private String ENDPOINT_GET_BOOK_BY_ISBN = "https://www.googleapis.com/books/v1/volumes";
 
+	/**
+	 *
+	 * @param id: Parametro que contiene el isbn que se concatenara en el request solicitado para la consulta
+	 * @url:  https://www.googleapis.com/books/v1/volumes?q=isbn:9781451648546
+	 */
 
-	@Given("el libro tiene el ISBN (.*)")
-	public void a_book_exists_with_isbn(String isbn){
-		request = given().param("q", "isbn:" + isbn);
+
+	@Given("el libro tiene el id (.*)")
+	public void a_book_exists_with_isbn(String id){
+		request = given().param("q", "id:" + id);
 	}
 
 	@When("un usuario obtiene los datos del libro por el ISBN")
@@ -60,7 +65,10 @@ public class BookStepDefinitions {
 				json.body(field.getKey(), containsInAnyOrder(Integer.parseInt(field.getValue())));
 			}
 			else{
-				json.body(field.getKey(), containsInAnyOrder(field.getValue()));
+			    String variableAuxiliar[] = field.getValue().split(",");
+			    String variableAuxiliar2 = variableAuxiliar[0];
+                String variableAuxiliar3 = variableAuxiliar[1];
+				json.body(field.getKey().toString(), containsInAnyOrder(variableAuxiliar2));
 			}
 		}
 	}
