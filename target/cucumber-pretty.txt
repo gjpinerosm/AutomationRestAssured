@@ -1,0 +1,8 @@
+Feature: Obtener el ISBN del libro
+
+  Scenario: Consultar el web service para obtener los datos de un libro por el ISBN [90m# GetBookByISBN.feature:2[0m
+    [32mGiven [0m[32mel libro tiene el ISBN [0m[32m[1m9781451648546[0m                                      [90m# BookStepDefinitions.a_book_exists_with_isbn(String)[0m
+    [32mWhen [0m[32mun usuario obtiene los datos del libro por el ISBN[0m                         [90m# BookStepDefinitions.a_user_retrieves_the_book_by_isbn()[0m
+    [32mThen [0m[32mel codigo de estado es [0m[32m[1m200[0m                                                 [90m# BookStepDefinitions.verify_status_code(int)[0m
+    [32mAnd [0m[32mla respuesta tiene los siguientes datos[0m                                     [90m# BookStepDefinitions.response_equals(String,String>)[0m
+    [32mAnd [0m[32mla respuesta incluye los datos siguientes en cualquier orden[0m                [90m# BookStepDefinitions.response_contains_in_any_order(String,String>)[0m

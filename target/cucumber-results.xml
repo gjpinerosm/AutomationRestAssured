@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="2.416212">
+<testcase classname="Obtener el ISBN del libro" name="Consultar el web service para obtener los datos de un libro por el ISBN" time="2.416212">
+<system-out><![CDATA[Given el libro tiene el ISBN 9781451648546..................................passed
+When un usuario obtiene los datos del libro por el ISBN.....................passed
+Then el codigo de estado es 200.............................................passed
+And la respuesta tiene los siguientes datos.................................passed
+And la respuesta incluye los datos siguientes en cualquier orden............passed
+]]></system-out>
+</testcase>
+</testsuite>

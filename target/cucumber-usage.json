@@ -1,0 +1,92 @@
+[
+  {
+    "source": "el libro tiene el ISBN (.*)",
+    "steps": [
+      {
+        "name": "el libro tiene el ISBN 9781451648546",
+        "aggregatedDurations": {
+          "average": 0.650365532,
+          "median": 0.650365532
+        },
+        "durations": [
+          {
+            "duration": 0.650365532,
+            "location": "GetBookByISBN.feature:3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "el codigo de estado es (\\d+)",
+    "steps": [
+      {
+        "name": "el codigo de estado es 200",
+        "aggregatedDurations": {
+          "average": 0.051586156,
+          "median": 0.051586156
+        },
+        "durations": [
+          {
+            "duration": 0.051586156,
+            "location": "GetBookByISBN.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "un usuario obtiene los datos del libro por el ISBN",
+    "steps": [
+      {
+        "name": "un usuario obtiene los datos del libro por el ISBN",
+        "aggregatedDurations": {
+          "average": 1.39375453,
+          "median": 1.39375453
+        },
+        "durations": [
+          {
+            "duration": 1.39375453,
+            "location": "GetBookByISBN.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "la respuesta incluye los datos siguientes en cualquier orden",
+    "steps": [
+      {
+        "name": "la respuesta incluye los datos siguientes en cualquier orden",
+        "aggregatedDurations": {
+          "average": 0.037257452,
+          "median": 0.037257452
+        },
+        "durations": [
+          {
+            "duration": 0.037257452,
+            "location": "GetBookByISBN.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "la respuesta tiene los siguientes datos",
+    "steps": [
+      {
+        "name": "la respuesta tiene los siguientes datos",
+        "aggregatedDurations": {
+          "average": 0.283247931,
+          "median": 0.283247931
+        },
+        "durations": [
+          {
+            "duration": 0.283247931,
+            "location": "GetBookByISBN.feature:6"
+          }
+        ]
+      }
+    ]
+  }
+]
