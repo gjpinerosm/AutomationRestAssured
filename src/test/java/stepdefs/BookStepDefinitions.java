@@ -9,11 +9,11 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.containsInAnyOrder;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.*;
 
 public class BookStepDefinitions {
 
@@ -66,9 +66,9 @@ public class BookStepDefinitions {
 			}
 			else{
 			    String variableAuxiliar[] = field.getValue().split(",");
-			    String variableAuxiliar2 = variableAuxiliar[0];
-                String variableAuxiliar3 = variableAuxiliar[1];
-				json.body(field.getKey().toString(), containsInAnyOrder(variableAuxiliar2));
+			    String variableAuxiliar0 = variableAuxiliar[0];
+                String variableAuxiliar1 = variableAuxiliar[1];
+				json.body(field.getKey(),hasItems(variableAuxiliar0,variableAuxiliar1));
 			}
 		}
 	}

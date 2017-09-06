@@ -7,8 +7,5 @@ Feature: Obtener el ISBN del libro
 	| totalItems 	 		| 2 					|
 	| kind					| books#volumes			|
    And la respuesta incluye los datos siguientes en cualquier orden
-	| items.volumeInfo.title 					| Steve Jobs, El libro de Steve Jobs |
-	| items.0.volumeInfo.publisher 				| Simon and Schuster			 	 |
-	| items.0.volumeInfo.pageCount 				| 630, 485       					 |
-
-
+	| items.volumeInfo.title 	 | Steve Jobs,El libro de Steve Jobs        |
+	| items.volumeInfo.publisher | Simon and Schuster,Malpaso Ediciones SL |

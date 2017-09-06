@@ -5,12 +5,12 @@
       {
         "name": "el codigo de estado es 200",
         "aggregatedDurations": {
-          "average": 0.05096471,
-          "median": 0.05096471
+          "average": 0.033081125,
+          "median": 0.033081125
         },
         "durations": [
           {
-            "duration": 0.05096471,
+            "duration": 0.033081125,
             "location": "GetBookByISBN.feature:5"
           }
         ]
@@ -23,12 +23,12 @@
       {
         "name": "el libro tiene el id 8U2oAAAAQBAJ",
         "aggregatedDurations": {
-          "average": 1.106339562,
-          "median": 1.106339562
+          "average": 0.51254642,
+          "median": 0.51254642
         },
         "durations": [
           {
-            "duration": 1.106339562,
+            "duration": 0.51254642,
             "location": "GetBookByISBN.feature:3"
           }
         ]
@@ -41,13 +41,31 @@
       {
         "name": "un usuario obtiene los datos del libro por el ISBN",
         "aggregatedDurations": {
-          "average": 3.617261882,
-          "median": 3.617261882
+          "average": 1.985595268,
+          "median": 1.985595268
         },
         "durations": [
           {
-            "duration": 3.617261882,
+            "duration": 1.985595268,
             "location": "GetBookByISBN.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "la respuesta incluye los datos siguientes en cualquier orden",
+    "steps": [
+      {
+        "name": "la respuesta incluye los datos siguientes en cualquier orden",
+        "aggregatedDurations": {
+          "average": 0.030291504,
+          "median": 0.030291504
+        },
+        "durations": [
+          {
+            "duration": 0.030291504,
+            "location": "GetBookByISBN.feature:9"
           }
         ]
       }
@@ -59,12 +77,12 @@
       {
         "name": "la respuesta tiene los siguientes datos",
         "aggregatedDurations": {
-          "average": 0.537970218,
-          "median": 0.537970218
+          "average": 0.357541875,
+          "median": 0.357541875
         },
         "durations": [
           {
-            "duration": 0.537970218,
+            "duration": 0.357541875,
             "location": "GetBookByISBN.feature:6"
           }
         ]
